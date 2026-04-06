@@ -1,0 +1,562 @@
+/* 공통사회1 학습자료 공통 스타일 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.7;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ── 왼쪽 사이드바 ── */
+.sidebar {
+  width: 220px;
+  min-width: 220px;
+  background: #0f2540;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  padding: 28px 20px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+.sidebar-title .book-icon {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+.sidebar-title h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+}
+.sidebar-title .sub {
+  font-size: 0.75rem;
+  color: #7a9cc0;
+  margin-top: 4px;
+}
+
+.sidebar nav {
+  padding: 16px 0;
+  flex: 1;
+}
+.sidebar nav ul {
+  list-style: none;
+}
+.sidebar nav ul li a {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 11px 20px;
+  color: #a8c4e0;
+  text-decoration: none;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  transition: background 0.15s, color 0.15s;
+  border-left: 3px solid transparent;
+}
+.sidebar nav ul li a:hover {
+  background: rgba(45,106,173,0.25);
+  color: #fff;
+  border-left-color: #4a8fd4;
+}
+.sidebar nav ul li a.active {
+  background: rgba(45,106,173,0.4);
+  color: #fff;
+  border-left-color: #5ba3e8;
+  font-weight: 600;
+}
+.sidebar nav ul li a .num {
+  background: rgba(255,255,255,0.15);
+  color: #9dc8f0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 10px;
+  white-space: nowrap;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.sidebar nav ul li a.active .num {
+  background: #2d6aad;
+  color: #fff;
+}
+
+.sidebar-footer {
+  padding: 16px 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.72rem;
+  color: #4a7a9a;
+}
+
+/* ── 상단 탭 네비게이션 ── */
+.top-nav {
+  background: #1a3a5c;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.top-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0 16px;
+  overflow-x: auto;
+}
+.top-nav ul li a {
+  display: block;
+  color: #a8c4e0;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+.top-nav ul li a:hover {
+  color: #fff;
+  border-bottom-color: #4a8fd4;
+}
+.top-nav ul li a.active {
+  color: #fff;
+  font-weight: 600;
+  border-bottom-color: #5ba3e8;
+}
+
+/* ── 오른쪽 메인 영역 ── */
+.content-wrap {
+  margin-left: 220px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* 헤더 */
+.page-header {
+  background: linear-gradient(135deg, #1a3a5c 0%, #2d6aad 100%);
+  color: white;
+  padding: 48px 40px 40px;
+  text-align: center;
+}
+.page-header .unit-label {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  color: #9dc8f0;
+  margin-bottom: 8px;
+}
+.page-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.page-header .subtitle {
+  font-size: 1rem;
+  color: #b8d8f0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* 메인 컨텐츠 */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 32px 64px;
+}
+
+/* 섹션 */
+.section {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+.section h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  border-left: 4px solid #2d6aad;
+  padding-left: 14px;
+  margin-bottom: 20px;
+}
+.section h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2d6aad;
+  margin: 20px 0 10px;
+}
+.section p {
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* 카드 그리드 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+.card {
+  background: #f0f5fc;
+  border-radius: 10px;
+  padding: 20px;
+  border-top: 4px solid #2d6aad;
+}
+.card.green  { border-top-color: #2e8b57; background: #f0faf4; }
+.card.orange { border-top-color: #e07b39; background: #fdf4ee; }
+.card.purple { border-top-color: #7b5ea7; background: #f5f0fc; }
+.card.teal   { border-top-color: #1a8a8a; background: #f0fafa; }
+.card .card-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #1a3a5c;
+}
+.card.green .card-title  { color: #2e8b57; }
+.card.orange .card-title { color: #c0642a; }
+.card.purple .card-title { color: #7b5ea7; }
+.card.teal .card-title   { color: #1a8a8a; }
+
+/* 다이어그램 컨테이너 */
+.diagram-box {
+  background: #f8faff;
+  border: 1px solid #d0dcee;
+  border-radius: 10px;
+  padding: 32px 24px;
+  margin: 20px 0;
+  overflow-x: auto;
+  text-align: center;
+}
+.diagram-box .mermaid {
+  display: inline-block;
+  text-align: left;
+}
+/* SVG를 축소하지 않고 원본 크기로 표시 → 가로 스크롤로 처리 */
+.diagram-box .mermaid svg {
+  max-width: none !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* 핵심 정리 박스 */
+.key-box {
+  background: linear-gradient(135deg, #e8f0fb, #f0f5fc);
+  border: 2px solid #2d6aad;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 20px 0;
+}
+.key-box .key-title {
+  font-weight: 700;
+  color: #1a3a5c;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.key-box ul { padding-left: 20px; }
+.key-box ul li { margin-bottom: 6px; color: #2a2a4a; }
+
+/* 표 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 0.92rem;
+}
+th {
+  background: #1a3a5c;
+  color: white;
+  padding: 10px 14px;
+  text-align: center;
+  font-weight: 600;
+}
+td {
+  padding: 9px 14px;
+  border: 1px solid #d8e3f0;
+  vertical-align: top;
+}
+tr:nth-child(even) td { background: #f5f8fd; }
+
+/* 예시/사례 박스 */
+.example-box {
+  background: #fffdf0;
+  border-left: 4px solid #e0b030;
+  border-radius: 0 8px 8px 0;
+  padding: 14px 18px;
+  margin: 14px 0;
+  font-size: 0.92rem;
+  color: #4a3c10;
+}
+.example-box strong { color: #8a6000; }
+
+/* 태그 */
+.tag {
+  display: inline-block;
+  background: #2d6aad;
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 9px;
+  border-radius: 20px;
+  margin-right: 4px;
+  font-weight: 600;
+}
+.tag.green  { background: #2e8b57; }
+.tag.orange { background: #e07b39; }
+.tag.purple { background: #7b5ea7; }
+
+/* 플로우 다이어그램 */
+.flow-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 20px 0;
+}
+.flow-box {
+  background: #2d6aad;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  min-width: 110px;
+}
+.flow-box.green  { background: #2e8b57; }
+.flow-box.orange { background: #e07b39; }
+.flow-box.purple { background: #7b5ea7; }
+.flow-box.teal   { background: #1a8a8a; }
+.flow-arrow {
+  font-size: 1.4rem;
+  color: #999;
+  padding: 0 8px;
+}
+
+/* 시험 출제 예상 태그 */
+.exam-tag {
+  display: inline-block;
+  background: #e74c3c;
+  color: white;
+  font-size: 0.72rem;
+  padding: 1px 7px;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* 추가된 내용 박스 */
+.new-box {
+  background: #f0faf4;
+  border: 2px solid #2e8b57;
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin: 16px 0;
+}
+.new-box .new-title {
+  font-weight: 700;
+  color: #2e8b57;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.new-box ul { padding-left: 20px; }
+.new-box ul li { margin-bottom: 5px; color: #1a4a2a; font-size: 0.92rem; }
+
+/* 중요 강조 박스 (녹색) */
+.important-box {
+  background: linear-gradient(135deg, #edfff4 0%, #d4f7e2 100%);
+  border: none;
+  border-left: 6px solid #16a34a;
+  border-radius: 0 12px 12px 0;
+  padding: 20px 24px;
+  margin: 20px 0;
+  box-shadow: 0 3px 12px rgba(22, 163, 74, 0.15);
+  position: relative;
+}
+.important-box::before {
+  content: '★ 중요';
+  position: absolute;
+  top: -1px;
+  right: 16px;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 3px 12px;
+  border-radius: 0 0 8px 8px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 6px rgba(22, 163, 74, 0.35);
+}
+.important-box .important-title {
+  font-weight: 800;
+  color: #14532d;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #86efac;
+}
+.important-box ul {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+.important-box ul li {
+  margin-bottom: 6px;
+  color: #14532d;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+.important-box ul li::marker { color: #16a34a; }
+.important-box p { color: #14532d; margin-bottom: 7px; font-size: 0.93rem; }
+.important-box strong { color: #15803d; }
+.important-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+  font-size: 0.72rem;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-weight: 800;
+  margin-left: 6px;
+  vertical-align: middle;
+  letter-spacing: 0.5px;
+  box-shadow: 0 1px 4px rgba(22, 163, 74, 0.4);
+}
+
+/* ── 항목별 색상 구분 (범위1.txt 7개 항목) ── */
+
+/* 16p 기후정의 — 청록 */
+.important-box.ib-teal {
+  background: linear-gradient(135deg, #e0f9f9 0%, #b2ecec 100%);
+  border-left-color: #0891b2;
+  box-shadow: 0 3px 14px rgba(8,145,178,0.18);
+}
+.important-box.ib-teal::before {
+  content: '🌊 중요 · 16p 기후정의';
+  background: linear-gradient(135deg, #0891b2, #22d3ee);
+  box-shadow: 0 2px 6px rgba(8,145,178,0.4);
+}
+.important-box.ib-teal .important-title { color: #164e63; border-bottom-color: #67e8f9; }
+.important-box.ib-teal p, .important-box.ib-teal ul li { color: #0c4a6e; }
+.important-box.ib-teal strong { color: #0369a1; }
+
+/* 24p 아리스토텔레스 — 보라 */
+.important-box.ib-purple {
+  background: linear-gradient(135deg, #f5f0ff 0%, #e9d5ff 100%);
+  border-left-color: #7c3aed;
+  box-shadow: 0 3px 14px rgba(124,58,237,0.18);
+}
+.important-box.ib-purple::before {
+  content: '📖 중요 · 24p 아리스토텔레스';
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  box-shadow: 0 2px 6px rgba(124,58,237,0.4);
+}
+.important-box.ib-purple .important-title { color: #3b0764; border-bottom-color: #c4b5fd; }
+.important-box.ib-purple p, .important-box.ib-purple ul li { color: #2e1065; }
+.important-box.ib-purple strong { color: #6d28d9; }
+
+/* 26p 쾌락의 역설 — 레드-오렌지 */
+.important-box.ib-red {
+  background: linear-gradient(135deg, #fff5f5 0%, #fecaca 100%);
+  border-left-color: #dc2626;
+  box-shadow: 0 3px 14px rgba(220,38,38,0.18);
+}
+.important-box.ib-red::before {
+  content: '⚠️ 중요 · 26p 쾌락의 역설';
+  background: linear-gradient(135deg, #dc2626, #f87171);
+  box-shadow: 0 2px 6px rgba(220,38,38,0.4);
+}
+.important-box.ib-red .important-title { color: #7f1d1d; border-bottom-color: #fca5a5; }
+.important-box.ib-red p, .important-box.ib-red ul li { color: #6b1515; }
+.important-box.ib-red strong { color: #b91c1c; }
+
+/* 30p 질 높은 정주 환경 — 하늘파랑 */
+.important-box.ib-blue {
+  background: linear-gradient(135deg, #eff8ff 0%, #bfdbfe 100%);
+  border-left-color: #2563eb;
+  box-shadow: 0 3px 14px rgba(37,99,235,0.18);
+}
+.important-box.ib-blue::before {
+  content: '🏠 중요 · 30p 질 높은 정주 환경';
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  box-shadow: 0 2px 6px rgba(37,99,235,0.4);
+}
+.important-box.ib-blue .important-title { color: #1e3a8a; border-bottom-color: #93c5fd; }
+.important-box.ib-blue p, .important-box.ib-blue ul li { color: #1e3470; }
+.important-box.ib-blue strong { color: #1d4ed8; }
+
+/* 31p 맹자·국민취업 — 황금 앰버 */
+.important-box.ib-amber {
+  background: linear-gradient(135deg, #fffbeb 0%, #fde68a 100%);
+  border-left-color: #d97706;
+  box-shadow: 0 3px 14px rgba(217,119,6,0.18);
+}
+.important-box.ib-amber::before {
+  content: '📜 중요 · 31p 맹자·국민취업지원제도';
+  background: linear-gradient(135deg, #d97706, #fbbf24);
+  box-shadow: 0 2px 6px rgba(217,119,6,0.4);
+}
+.important-box.ib-amber .important-title { color: #78350f; border-bottom-color: #fcd34d; }
+.important-box.ib-amber p, .important-box.ib-amber ul li { color: #5c2d00; }
+.important-box.ib-amber strong { color: #b45309; }
+
+/* 33p 사회적 자본 — 에메랄드 */
+.important-box.ib-emerald {
+  background: linear-gradient(135deg, #ecfdf5 0%, #a7f3d0 100%);
+  border-left-color: #059669;
+  box-shadow: 0 3px 14px rgba(5,150,105,0.18);
+}
+.important-box.ib-emerald::before {
+  content: '🤝 중요 · 33p 사회적 자본';
+  background: linear-gradient(135deg, #059669, #34d399);
+  box-shadow: 0 2px 6px rgba(5,150,105,0.4);
+}
+.important-box.ib-emerald .important-title { color: #064e3b; border-bottom-color: #6ee7b7; }
+.important-box.ib-emerald p, .important-box.ib-emerald ul li { color: #064e3b; }
+.important-box.ib-emerald strong { color: #047857; }
+
+/* 34p 세계 행복 보고서 — 인디고 */
+.important-box.ib-indigo {
+  background: linear-gradient(135deg, #eef2ff 0%, #c7d2fe 100%);
+  border-left-color: #4338ca;
+  box-shadow: 0 3px 14px rgba(67,56,202,0.18);
+}
+.important-box.ib-indigo::before {
+  content: '🌍 중요 · 34p 세계 행복 보고서';
+  background: linear-gradient(135deg, #4338ca, #818cf8);
+  box-shadow: 0 2px 6px rgba(67,56,202,0.4);
+}
+.important-box.ib-indigo .important-title { color: #1e1b4b; border-bottom-color: #a5b4fc; }
+.important-box.ib-indigo p, .important-box.ib-indigo ul li { color: #1e1b4b; }
+.important-box.ib-indigo strong { color: #3730a3; }
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .sidebar { width: 200px; min-width: 200px; }
+  .content-wrap { margin-left: 200px; }
+  .page-header h1 { font-size: 1.5rem; }
+  .section { padding: 20px; }
+  .card-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .sidebar { display: none; }
+  .content-wrap { margin-left: 0; }
+}
