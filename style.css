@@ -144,25 +144,26 @@ body {
 .page-header {
   background: linear-gradient(135deg, #1a3a5c 0%, #2d6aad 100%);
   color: white;
-  padding: 48px 40px 40px;
-  text-align: center;
+  padding: 10px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 }
 .page-header .unit-label {
-  font-size: 0.85rem;
-  letter-spacing: 2px;
+  font-size: 0.75rem;
   color: #9dc8f0;
-  margin-bottom: 8px;
+  white-space: nowrap;
 }
 .page-header h1 {
-  font-size: 2rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin: 0;
 }
 .page-header .subtitle {
-  font-size: 1rem;
+  font-size: 0.82rem;
   color: #b8d8f0;
-  max-width: 700px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 /* 메인 컨텐츠 */
