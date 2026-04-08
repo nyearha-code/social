@@ -348,9 +348,16 @@ tr:nth-child(even) td { background: #f5f8fd; }
 
 /* 시험 출제 예상 태그 */
 .exam-tag {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-left: 3px;
+  vertical-align: middle;
+}
+
+.added-tag {
   display: inline-block;
-  background: #e74c3c;
-  color: white;
+  background: #f59e0b;
+  color: #fff;
   font-size: 0.72rem;
   padding: 1px 7px;
   border-radius: 10px;
