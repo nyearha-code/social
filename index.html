@@ -2,10 +2,170 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=page1.html">
-  <title>공통사회1 학습자료</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>학습 자료실</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+      background: #f0f4f9;
+      color: #222;
+      min-height: 100vh;
+    }
+
+    /* 헤더 */
+    header {
+      background: linear-gradient(135deg, #0f2540 0%, #1a3a5c 100%);
+      color: #fff;
+      padding: 48px 32px 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    header p {
+      font-size: 0.95rem;
+      color: #7a9cc0;
+    }
+
+    /* 본문 */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* 섹션 타이틀 */
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #2d6aad;
+      margin-bottom: 14px;
+      padding-left: 4px;
+    }
+
+    /* 카드 그리드 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+      margin-bottom: 52px;
+    }
+
+    /* 카드 */
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      border: 1.5px solid #e4eaf2;
+      transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(45,106,173,0.15);
+      border-color: #2d6aad;
+    }
+    .card-icon {
+      font-size: 1.8rem;
+    }
+    .card-subject {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #2d6aad;
+      letter-spacing: 0.06em;
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1a3a5c;
+      line-height: 1.45;
+    }
+    .card-desc {
+      font-size: 0.85rem;
+      color: #667;
+      line-height: 1.6;
+    }
+    .card-meta {
+      margin-top: auto;
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 0.72rem;
+      padding: 2px 9px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+    .badge.blue   { background: #dbeafe; color: #1d4ed8; }
+    .badge.green  { background: #d1fae5; color: #065f46; }
+    .badge.orange { background: #fef3c7; color: #92400e; }
+
+    /* 반응형 */
+    @media (max-width: 600px) {
+      header { padding: 32px 20px 28px; }
+      header h1 { font-size: 1.4rem; }
+      main { padding: 32px 16px 60px; }
+    }
+  </style>
 </head>
 <body>
-  <p>잠시 후 이동합니다... <a href="page1.html">바로 가기</a></p>
+
+<header>
+  <h1>📚 학습 자료실</h1>
+  <p>학습자료와 기출문제를 한 곳에서 확인하세요</p>
+</header>
+
+<main>
+
+  <!-- 학습자료 -->
+  <div class="section-title">학습자료</div>
+  <div class="card-grid">
+
+    <a class="card" href="page1.html">
+      <div class="card-icon">📘</div>
+      <div class="card-subject">공통사회 1</div>
+      <div class="card-title">자연과 인간문화</div>
+      <div class="card-desc">통합적 관점 · 행복 · 자연환경과 인간 · 문화와 다양성 — 핵심 개념 정리 및 다이어그램</div>
+      <div class="card-meta">
+        <span class="badge blue">pp.10–79</span>
+        <span class="badge green">4단원</span>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- 기출문제 -->
+  <div class="section-title">기출문제</div>
+  <div class="card-grid">
+
+    <a class="card" href="기출문제/page1.html">
+      <div class="card-icon">📝</div>
+      <div class="card-subject">한국사</div>
+      <div class="card-title">한국사 1학기 중간</div>
+      <div class="card-desc">선사·삼국 → 통일신라·고려 → 조선·사상문화 — 기출 패턴 창작 문제 20선 + 정답 해설</div>
+      <div class="card-meta">
+        <span class="badge blue">pp.10–51, 86–99</span>
+        <span class="badge orange">20문제</span>
+      </div>
+    </a>
+
+  </div>
+
+</main>
+
 </body>
 </html>
