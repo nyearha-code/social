@@ -2,10 +2,133 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=page1.html">
-  <title>한국사1 기출문제</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기출문제 | 과목 선택</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+      background: #f0f4f9;
+      color: #222;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #0f2540 0%, #1a3a5c 100%);
+      color: #fff;
+      padding: 48px 32px 40px;
+      text-align: center;
+    }
+    header h1 { font-size: 1.9rem; font-weight: 700; margin-bottom: 8px; }
+    header p  { font-size: 0.95rem; color: #7a9cc0; }
+    .back-link {
+      display: inline-block;
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: #7a9cc0;
+      text-decoration: none;
+    }
+    .back-link:hover { color: #fff; }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 52px 24px 80px;
+    }
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #2d6aad;
+      margin-bottom: 16px;
+      padding-left: 4px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      border: 1.5px solid #e4eaf2;
+      transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(45,106,173,0.15);
+      border-color: #2d6aad;
+    }
+    .card-icon   { font-size: 1.8rem; }
+    .card-subject { font-size: 0.72rem; font-weight: 700; color: #2d6aad; letter-spacing: 0.06em; }
+    .card-title  { font-size: 1.05rem; font-weight: 700; color: #1a3a5c; line-height: 1.45; }
+    .card-desc   { font-size: 0.85rem; color: #667; line-height: 1.6; }
+    .card-meta   { margin-top: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+    .badge       { font-size: 0.72rem; padding: 2px 9px; border-radius: 20px; font-weight: 600; }
+    .badge.blue  { background: #dbeafe; color: #1d4ed8; }
+    .badge.orange{ background: #fef3c7; color: #92400e; }
+    .badge.green { background: #d1fae5; color: #065f46; }
+    @media (max-width: 600px) {
+      header { padding: 32px 20px 28px; }
+      main   { padding: 32px 16px 60px; }
+    }
+  </style>
 </head>
 <body>
-  <p>잠시 후 이동합니다... <a href="page1.html">바로 가기</a></p>
+
+<header>
+  <h1>📝 기출문제</h1>
+  <p>과목을 선택하세요</p>
+  <a class="back-link" href="../index.html">← 학습 자료실로</a>
+</header>
+
+<main>
+  <div class="section-title">과목 선택</div>
+  <div class="card-grid">
+
+    <a class="card" href="한국사/page1.html">
+      <div class="card-icon">🏛️</div>
+      <div class="card-subject">한국사</div>
+      <div class="card-title">한국사 1학기 중간</div>
+      <div class="card-desc">선사·삼국 → 통일신라·고려 → 조선·사상문화 — 기출 패턴 창작 문제</div>
+      <div class="card-meta">
+        <span class="badge blue">pp.10–51, 86–99</span>
+        <span class="badge orange">20문제</span>
+      </div>
+    </a>
+
+    <a class="card" href="사회/page1.html">
+      <div class="card-icon">🌏</div>
+      <div class="card-subject">통합사회 1</div>
+      <div class="card-title">통합사회 1학기 중간</div>
+      <div class="card-desc">인간·사회·환경 · 삶의 이해 · 자연환경과 인간 — 기출 패턴 창작 문제</div>
+      <div class="card-meta">
+        <span class="badge blue">pp.1–79</span>
+        <span class="badge orange">20문제</span>
+      </div>
+    </a>
+
+    <a class="card" href="과학/page1.html">
+      <div class="card-icon">🔬</div>
+      <div class="card-subject">통합과학 1</div>
+      <div class="card-title">통합과학 1학기 중간</div>
+      <div class="card-desc">물질의 규칙성 · 자연의 구성 물질 · 역학적 시스템 — 기출 패턴 창작 문제</div>
+      <div class="card-meta">
+        <span class="badge blue">pp.12–99</span>
+        <span class="badge orange">20문제</span>
+      </div>
+    </a>
+
+  </div>
+</main>
+
 </body>
 </html>

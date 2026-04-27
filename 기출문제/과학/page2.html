@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>원소의 생성과 규칙성 | 통합과학1 기출문제</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <a href="../../index.html" class="logo-link" title="메인으로">
+    <img src="../croc-logo.svg" alt="홈" width="56" height="40">
+  </a>
+  <div class="sidebar-title">
+    <div class="book-icon">📝</div>
+    <h2>통합과학1 기출문제</h2>
+    <div class="sub">고1 · 2025년 1학기 대비</div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="page1.html"><span class="num">1–7</span> 과학의 기초</a></li>
+      <li><a href="page2.html" class="active"><span class="num">8–14</span> 원소의 생성과 규칙성</a></li>
+      <li><a href="page3.html"><span class="num">15–20</span> 자연의 구성 물질</a></li>
+      <li><a href="answers.html"><span class="num">답지</span> 정답 및 해설</a></li>
+    </ul>
+  </nav>
+  <div class="sidebar-footer">범위: pp.12–99</div>
+</aside>
+
+<div class="content-wrap">
+
+<nav class="top-nav">
+  <ul>
+    <li><a href="page1.html">① 과학의 기초 (1–7)</a></li>
+    <li><a href="page2.html" class="active">② 원소의 생성과 규칙성 (8–14)</a></li>
+    <li><a href="page3.html">③ 자연의 구성 물질 (15–20)</a></li>
+    <li><a href="answers.html">답지</a></li>
+  </ul>
+</nav>
+
+<header class="page-header">
+  <div class="unit-label">pp.46–77 · 문항 8–14</div>
+  <h1>원소의 생성과 규칙성</h1>
+  <p class="subtitle">기출 패턴을 반영한 창작 문제 — 정답을 선택한 후 확인 버튼을 누르세요</p>
+</header>
+
+<main>
+
+<div class="score-bar" id="score-bar">
+  <span class="score-label">현재 점수</span>
+  <span class="score-value" id="score-display">0 / 7</span>
+  <div class="score-progress"><div class="score-progress-fill" id="score-fill"></div></div>
+  <span class="score-label" id="score-pct">0%</span>
+</div>
+
+<!-- Q8 -->
+<div class="question-card" id="card-8">
+  <div class="question-header">
+    <span class="question-num">문제 8</span>
+    <span class="badge-difficulty 하">하</span>
+    <span class="question-unit">원소의 생성과 규칙성 · pp.46-77</span>
+  </div>
+  <div class="question-stem">빅뱅 우주론에 따른 우주 초기 원소 생성 과정을 순서대로 바르게 나열한 것은?</div>
+  <ul class="choices" id="q8">
+    <li onclick="pick(this,8,false)">① 쿼크 생성 → 헬륨 원자핵 생성 → 양성자·중성자 생성 → 수소 원자 생성</li>
+    <li onclick="pick(this,8,true)">② 쿼크 생성 → 양성자·중성자 생성 → 헬륨 원자핵 생성 → 수소 원자 생성</li>
+    <li onclick="pick(this,8,false)">③ 양성자·중성자 생성 → 쿼크 생성 → 헬륨 원자핵 생성 → 수소 원자 생성</li>
+    <li onclick="pick(this,8,false)">④ 쿼크 생성 → 양성자·중성자 생성 → 수소 원자 생성 → 헬륨 원자핵 생성</li>
+    <li onclick="pick(this,8,false)">⑤ 헬륨 원자핵 생성 → 쿼크 생성 → 양성자·중성자 생성 → 수소 원자 생성</li>
+  </ul>
+  <button class="btn-check" onclick="check(8)">정답 확인</button>
+  <div class="explanation" id="exp-8">
+    <strong>정답: ②</strong><br>
+    빅뱅 우주론에 따르면 우주 초기에 ①쿼크와 전자 생성 → ②쿼크가 결합하여 양성자와 중성자 생성 → ③양성자(수소 원자핵)와 중성자의 핵융합 반응으로 헬륨 원자핵 생성(빅뱅 후 약 3분 이내) → ④우주 온도가 낮아지면서 원자핵과 전자가 결합하여 수소·헬륨 원자 생성(빅뱅 후 약 38만 년) 순서로 진행되었다.
+  </div>
+</div>
+
+<!-- Q9 -->
+<div class="question-card" id="card-9">
+  <div class="question-header">
+    <span class="question-num">문제 9</span>
+    <span class="badge-difficulty 중">중</span>
+    <span class="question-unit">원소의 생성과 규칙성 · pp.46-77</span>
+  </div>
+  <div class="question-stem">스펙트럼에 대한 설명으로 옳은 것만을 &lt;보기&gt;에서 있는 대로 고른 것은?</div>
+  <div class="question-context">&lt;보기&gt;
+ㄱ. 고온의 기체에서 방출한 빛이 프리즘을 통과하면 밝은 선이 나타나는 방출 스펙트럼을 관찰할 수 있다.
+ㄴ. 천체의 흡수 스펙트럼을 분석하면 그 천체의 대기에 포함된 원소의 종류를 알 수 있다.
+ㄷ. 원소마다 스펙트럼에서 선이 나타나는 위치가 다르므로 스펙트럼으로 원소의 종류를 구분할 수 없다.</div>
+  <ul class="choices" id="q9">
+    <li onclick="pick(this,9,false)">① ㄱ</li>
+    <li onclick="pick(this,9,false)">② ㄴ</li>
+    <li onclick="pick(this,9,true)">③ ㄱ, ㄴ</li>
+    <li onclick="pick(this,9,false)">④ ㄴ, ㄷ</li>
+    <li onclick="pick(this,9,false)">⑤ ㄱ, ㄴ, ㄷ</li>
+  </ul>
+  <button class="btn-check" onclick="check(9)">정답 확인</button>
+  <div class="explanation" id="exp-9">
+    <strong>정답: ③</strong><br>
+    ㄱ. 옳다. 고온의 기체에서 방출한 빛이 프리즘을 통과하면 밝은 선이 나타나는 방출 스펙트럼을 관찰할 수 있다. ㄴ. 옳다. 천체의 흡수 스펙트럼에서 검은 선의 위치를 분석하면 천체 대기에 포함된 원소의 종류를 알 수 있다. ㄷ. 틀리다. 원소마다 스펙트럼에서 고유한 위치에 선이 나타나므로 스펙트럼을 관찰해 원소의 종류를 구분할 수 있다.
+  </div>
+</div>
+
+<!-- Q10 -->
+<div class="question-card" id="card-10">
+  <div class="question-header">
+    <span class="question-num">문제 10</span>
+    <span class="badge-difficulty 중">중</span>
+    <span class="question-unit">원소의 생성과 규칙성 · pp.46-77</span>
+  </div>
+  <div class="question-stem">별의 진화와 원소 생성에 대한 설명으로 옳은 것만을 &lt;보기&gt;에서 있는 대로 고른 것은?</div>
+  <div class="question-context">&lt;보기&gt;
+ㄱ. 원시별의 중심부 온도가 1000만 K 이상이 되면 수소 핵융합 반응이 시작된다.
+ㄴ. 별의 중심부에서 헬륨 핵융합 반응이 일어나려면 온도가 1억 K 이상이어야 한다.
+ㄷ. 태양보다 질량이 훨씬 큰 별의 중심부에서는 연속적인 핵융합 반응이 일어나 최종적으로 금(Au)이 만들어진다.</div>
+  <ul class="choices" id="q10">
+    <li onclick="pick(this,10,false)">① ㄱ</li>
+    <li onclick="pick(this,10,false)">② ㄷ</li>
+    <li onclick="pick(this,10,true)">③ ㄱ, ㄴ</li>
+    <li onclick="pick(this,10,false)">④ ㄴ, ㄷ</li>
+    <li onclick="pick(this,10,false)">⑤ ㄱ, ㄴ, ㄷ</li>
+  </ul>
+  <button class="btn-check" onclick="check(10)">정답 확인</button>
+  <div class="explanation" id="exp-10">
+    <strong>정답: ③</strong><br>
+    ㄱ. 옳다. 원시별의 중심부 온도가 1000만 K 이상이 되면 수소 원자핵이 헬륨 원자핵으로 바뀌는 수소 핵융합 반응이 시작된다. ㄴ. 옳다. 헬륨으로 이루어진 중심부가 계속 수축해 온도가 1억 K 이상이 되면 헬륨 핵융합 반응이 일어나 탄소가 만들어진다. ㄷ. 틀리다. 태양보다 질량이 훨씬 큰 별의 중심부에서는 연속적인 핵융합 반응으로 최종적으로 철(Fe)까지 만들어진다. 금(Au)은 초신성 폭발 과정에서 생성된다.
+  </div>
+</div>
+
+<!-- Q11 -->
+<div class="question-card" id="card-11">
+  <div class="question-header">
+    <span class="question-num">문제 11</span>
+    <span class="badge-difficulty 중">중</span>
+    <span class="question-unit">원소의 생성과 규칙성 · pp.46-77</span>
+  </div>
+  <div class="question-stem">다음은 지구와 생명체를 구성하는 주요 원소를 나타낸 자료이다. 이에 대한 설명으로 옳은 것만을 &lt;보기&gt;에서 있는 대로 고른 것은?</div>
+  <div class="question-context">지구 전체의 주요 구성 원소(질량비): 철(35.0%), 산소(30.0%), 규소(15.0%), 마그네슘(13.0%), 기타
+사람의 주요 구성 원소(질량비): 산소(65.0%), 탄소(18.5%), 수소(9.5%), 질소(3.3%), 기타
+
+&lt;보기&gt;
+ㄱ. 지구 전체에서 질량비가 가장 큰 원소는 철이다.
+ㄴ. 사람의 몸에서 질량비가 가장 큰 원소는 탄소이다.
+ㄷ. 지구와 생명체 모두에서 산소가 포함되어 있다.</div>
+  <ul class="choices" id="q11">
+    <li onclick="pick(this,11,false)">① ㄱ</li>
+    <li onclick="pick(this,11,false)">② ㄴ</li>
+    <li onclick="pick(this,11,true)">③ ㄱ, ㄷ</li>
+    <li onclick="pick(this,11,false)">④ ㄴ, ㄷ</li>
+    <li onclick="pick(this,11,false)">⑤ ㄱ, ㄴ, ㄷ</li>
+  </ul>
+  <button class="btn-check" onclick="check(11)">정답 확인</button>
+  <div class="explanation" id="exp-11">
+    <strong>정답: ③</strong><br>
+    ㄱ. 옳다. 지구 전체에서 질량비가 가장 큰 원소는 철(35.0%)이다. ㄴ. 틀리다. 사람의 몸에서 질량비가 가장 큰 원소는 산소(65.0%)이고, 탄소는 18.5%로 두 번째이다. ㄷ. 옳다. 지구 전체에서 산소는 30.0%로 두 번째로 많은 원소이며, 사람의 몸에서도 산소가 65.0%로 가장 많다.
+  </div>
+</div>
+
+<!-- Q12 -->
+<div class="question-card" id="card-12">
+  <div class="question-header">
+    <span class="question-num">문제 12</span>
+    <span class="badge-difficulty 중">중</span>
+    <span class="question-unit">원소의 생성과 규칙성 · pp.46-77</span>
+  </div>
+  <div class="question-stem">알칼리 금속에 대한 설명으로 옳은 것은?</div>
+  <ul class="choices" id="q12">
+    <li onclick="pick(this,12,false)">① 주기율표의 2족 원소이다.</li>
+    <li onclick="pick(this,12,false)">② 다른 금속보다 밀도가 크다.</li>
+    <li onclick="pick(this,12,false)">③ 물과 반응하면 산성 수용액을 만든다.</li>
+    <li onclick="pick(this,12,true)">④ 반응성이 커서 석유나 파라핀에 담가 보관한다.</li>
+    <li onclick="pick(this,12,false)">⑤ 공기 중에서 반응성이 작아 안정하게 보존된다.</li>
+  </ul>
+  <button class="btn-check" onclick="check(12)">정답 확인</button>
+  <div class="explanation" id="exp-12">
+    <strong>정답: ④</strong><br>
+    알칼리 금속은 주기율표 1족 원소 중 수소를 제외한 Li, Na, K, Rb, Cs, Fr 등이다. 이들은 반응성이 매우 커서 공기 중의 산소, 물과 빠르게 반응하므로 산소와 물의 접촉을 막기 위해 석유나 파라핀에 담가 보관한다. 또한 다른 금속보다 밀도가 작고, 물과 반응하면 수소 기체가 발생하며 수용액은 염기성을 띤다.
+  </div>
+</div>
+
+<!-- Q13 -->
+<div class="question-card" id="card-13">
+  <div class="question-header">
+    <span class="question-num">문제 13</span>
+    <span class="badge-difficulty 중">중</span>
+    <span class="question-unit">원소의 생성과 규칙성 · pp.46-77</span>
+  </div>
+  <div class="question-stem">주기율표와 원소의 주기성에 대한 설명으로 옳은 것만을 &lt;보기&gt;에서 있는 대로 고른 것은?</div>
+  <div class="question-context">&lt;보기&gt;
+ㄱ. 주기율표의 가로줄을 족, 세로줄을 주기라고 한다.
+ㄴ. 같은 주기에 속하는 원소들은 전자가 채워진 전자 껍질의 수가 같다.
+ㄷ. 같은 족에 속하는 원소들은 원자가 전자의 수가 같아 유사한 화학적 성질을 가진다.</div>
+  <ul class="choices" id="q13">
+    <li onclick="pick(this,13,false)">① ㄱ</li>
+    <li onclick="pick(this,13,false)">② ㄴ</li>
+    <li onclick="pick(this,13,false)">③ ㄱ, ㄴ</li>
+    <li onclick="pick(this,13,true)">④ ㄴ, ㄷ</li>
+    <li onclick="pick(this,13,false)">⑤ ㄱ, ㄴ, ㄷ</li>
+  </ul>
+  <button class="btn-check" onclick="check(13)">정답 확인</button>
+  <div class="explanation" id="exp-13">
+    <strong>정답: ④</strong><br>
+    ㄱ. 틀리다. 주기율표의 가로줄을 주기, 세로줄을 족이라고 한다. ㄴ. 옳다. 같은 주기에 속하는 원소는 원자의 전자 배치에서 전자가 채워진 전자 껍질의 수가 같다. ㄷ. 옳다. 같은 족에 속하는 원소는 원자가 전자의 수가 같아 유사한 화학적 성질을 가진다.
+  </div>
+</div>
+
+<!-- Q14 -->
+<div class="question-card" id="card-14">
+  <div class="question-header">
+    <span class="question-num">문제 14</span>
+    <span class="badge-difficulty 상">상</span>
+    <span class="question-unit">원소의 생성과 규칙성 · pp.46-77</span>
+  </div>
+  <div class="question-stem">다음은 이온 결합과 공유 결합에 대한 실험 결과이다. 이에 대한 설명으로 옳은 것만을 &lt;보기&gt;에서 있는 대로 고른 것은?</div>
+  <div class="question-context">물질 | 고체 상태 전기 전도 | 수용액 상태 전기 전도
+염화 나트륨(NaCl) | × | ○
+설탕(C₁₂H₂₂O₁₁)  | × | ×
+황산 구리(Ⅱ)(CuSO₄) | × | ○
+(○: 전기 전도성 있음, ×: 없음)
+
+&lt;보기&gt;
+ㄱ. 염화 나트륨과 황산 구리(Ⅱ)는 이온 결합 물질이다.
+ㄴ. 설탕은 물에 녹으면 이온으로 나뉘어져 전류가 흐른다.
+ㄷ. 이온 결합 물질은 고체 상태에서 이온이 강하게 결합하고 있어 전류가 흐르지 않는다.</div>
+  <ul class="choices" id="q14">
+    <li onclick="pick(this,14,false)">① ㄱ</li>
+    <li onclick="pick(this,14,false)">② ㄴ</li>
+    <li onclick="pick(this,14,true)">③ ㄱ, ㄷ</li>
+    <li onclick="pick(this,14,false)">④ ㄴ, ㄷ</li>
+    <li onclick="pick(this,14,false)">⑤ ㄱ, ㄴ, ㄷ</li>
+  </ul>
+  <button class="btn-check" onclick="check(14)">정답 확인</button>
+  <div class="explanation" id="exp-14">
+    <strong>정답: ③</strong><br>
+    ㄱ. 옳다. 수용액 상태에서 전기 전도성이 있는 염화 나트륨과 황산 구리(Ⅱ)는 이온 결합 물질로, 물에 녹아 이온으로 나뉘어 전류가 흐른다. ㄴ. 틀리다. 설탕은 공유 결합 물질로, 물에 녹아도 이온으로 나뉘어지지 않아 수용액에서도 전류가 흐르지 않는다. ㄷ. 옳다. 이온 결합 물질은 고체 상태에서 양이온과 음이온이 강하게 결합하고 있어 전류가 흐르지 않는다.
+  </div>
+</div>
+
+<div style="text-align:center; margin-top:12px; display:flex; justify-content:center; gap:16px;">
+  <a href="page1.html" style="display:inline-block; padding:12px 32px; background:#6c757d; color:#fff; border-radius:8px; text-decoration:none; font-weight:700;">← 이전 파트</a>
+  <a href="page3.html" style="display:inline-block; padding:12px 32px; background:#2d6aad; color:#fff; border-radius:8px; text-decoration:none; font-weight:700;">다음 파트 →</a>
+</div>
+
+</main>
+</div>
+
+<script>
+const total = 7;
+let answered = {};
+let correct = 0;
+
+function pick(el, qid, isCorrect) {
+  const card = document.getElementById('card-' + qid);
+  if (card.querySelector('.btn-check').disabled) return;
+  const ul = el.closest('ul');
+  ul.querySelectorAll('li').forEach(li => li.classList.remove('selected'));
+  el.classList.add('selected');
+  el.dataset.correct = isCorrect;
+  answered[qid] = { el, isCorrect };
+}
+
+function check(qid) {
+  const s = answered[qid];
+  if (!s) { alert('선지를 먼저 선택하세요.'); return; }
+  const card = document.getElementById('card-' + qid);
+  const btn = card.querySelector('.btn-check');
+  btn.disabled = true;
+
+  if (s.isCorrect) {
+    s.el.classList.add('correct');
+    correct++;
+  } else {
+    s.el.classList.add('wrong');
+    const ul = card.querySelector('ul');
+    ul.querySelectorAll('li').forEach(li => {
+      if (li.dataset.correct === 'true') li.classList.add('correct');
+    });
+  }
+
+  document.getElementById('exp-' + qid).classList.add('visible');
+  updateScore();
+}
+
+function updateScore() {
+  const done = Object.keys(answered).filter(k => document.getElementById('card-'+k).querySelector('.btn-check').disabled).length;
+  document.getElementById('score-display').textContent = correct + ' / ' + done;
+  const pct = done > 0 ? Math.round(correct / done * 100) : 0;
+  document.getElementById('score-pct').textContent = pct + '%';
+  document.getElementById('score-fill').style.width = pct + '%';
+}
+</script>
+</body>
+</html>
